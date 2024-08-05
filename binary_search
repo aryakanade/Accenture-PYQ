@@ -1,0 +1,16 @@
+arr = [2,3,10,19,4,5,8]
+n = len(arr)
+key = 10
+arr.sort()
+start = 0
+end = n-1
+while start <= end:
+    mid = (start + end)//2
+    if arr[mid] == key:
+        print(mid)
+        break
+    elif arr[mid] > key:
+        end = mid - 1
+    else:
+        start = mid + 1
+    

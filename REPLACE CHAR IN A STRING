@@ -1,4 +1,11 @@
 s ="abbaabcc"
-result = ' '
-result = s.replace('a','*').replace('b','a').replace('*','b')
-print(result)
+lst = list(s)
+for i in range(len(lst)):
+    if lst[i] == 'a':
+        lst[i] = 'b'
+    elif lst[i] == 'b':
+        lst[i] = 'a'
+res = " "
+for i in range(len(lst)):
+    res += lst[i]
+print(res)

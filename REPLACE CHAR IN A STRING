@@ -1,0 +1,4 @@
+s ="abbaabcc"
+result = ' '
+result = s.replace('a','*').replace('b','a').replace('*','b')
+print(result)
